@@ -61,11 +61,11 @@ function submitData(event) {
                 image: imageUrl,
                 postAt: new Date(),
                 author: "Ravano Akbar Widodo",
-                nodeJs: true, inputNodejs,
-                reactJs: true, inputReactjs,
-                nextJs: false, inputNextjs,
-                typescript: false, inputTypescript,
-            }
+                nodeJs: true,
+                reactJs: true,
+                nextJs: false,
+                typescript: false,
+            };
 
             dataBlog.push(blog);
             console.log("dataBlog", dataBlog)
