@@ -87,7 +87,7 @@ function renderMyProject() {
                     <button class="btn-post">Delete Post</button>
                 </div>
                 <h1>
-                    <a href="/My-Project-Detail/:id" target="_blank">${dataMyProject[index].title}</a>
+                    <a href="/My-Project-detail/:id" target="_blank">${dataMyProject[index].title}</a>
                 </h1>
                 <h3>Duration : ${dataMyProject[index].duration}</h3>
                 <br>
