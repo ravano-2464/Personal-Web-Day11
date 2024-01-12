@@ -3,12 +3,11 @@ const path = require('path')
 const app = express()
 const port = 7000
 
-// app.set = buat setting varible global, configuratoin, dll
 app.set("view engine", "hbs")
 app.set("views", path.join(__dirname, 'src/views'))
 
 app.use("/assets", express.static(path.join(__dirname, 'src/assets')))
-app.use(express.urlencoded({ extended: false })) // body parser, extended : false -> querystring, extended : true -> menggunakan querystring third party -> qs
+app.use(express.urlencoded({ extended: false }))
 
 app.get('/', home)
 app.get('/contact', contact)
@@ -53,13 +52,13 @@ function addMyProjectView(req, res) {
 function addMyProject(req, res) {
     const { title, content } = req.body
 
-    alert("Title :", title)
-    alert("Content :", content)
-    res.redirect('My-Project')
+    console.log("Title :", title)
+    console.log("Content :", content)
+    res.redirect('/My-Project') 
 }
 
 function MyProjectDetail(req, res) {
-    const { id } = req.params // destructuring
+    const { id } = req.params
 
     const title = "Title 1"
     const content = "Content 1"
