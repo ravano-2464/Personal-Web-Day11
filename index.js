@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 const app = express()
-const port = 5000
+const port = 700
 
 // app.set = buat setting varible global, configuratoin, dll
 app.set("view engine", "hbs")
@@ -12,8 +12,8 @@ app.use(express.urlencoded({ extended: false })) // body parser, extended : fals
 
 app.get('/', home)
 app.get('/contact', contact)
-app.get('/My-Project', blog)
-app.get('/add-My-Project', addBlogView)
+app.get('/My-Project', MyProject)
+app.get('/add-My-Project', addMyProjectView)
 app.post('/add-My-Project', addBlog)
 
 app.get('/My-Project-detail/:id', blogDetail)
