@@ -18,7 +18,8 @@
             font-family: 'Poppins', sans-serif;
         }
 
-        .btn-primary {
+        .btn-primary, 
+        .btn-secondary{
             background-color: #f7f7f7 !important;
             color: #333;
             padding: 10px;
@@ -31,7 +32,8 @@
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        .btn-primary:hover {
+        .btn-primary:hover,
+        .btn-secondary:hover {
             background-color: #333 !important;
             color: #fff;
         }
@@ -91,7 +93,7 @@
 
     <div class="container d-flex flex-column">
         <div class="w-100 d-flex justify-content-end mb-3">
-            <a href="/add-My-Project" class="btn btn-primary">Add New My Project</a>
+            <a href="/add-My-Project" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Add New My Project</a>
         </div>
         <div id="contents">
             {{#each data}}
@@ -114,8 +116,8 @@
                             </div>
                         </div>
                         <div class="col-md-2 d-flex" style="height: fit-content;">
-                            <button class="btn btn-secondary">Edit post</button>
-                            <button class="btn btn-primary">Delete post</button>
+                            <button class="btn btn-secondary"><i class="fa fa-pencil"></i> Edit post</button>
+                            <button class="btn btn-primary"><i class="fa fa-trash"></i> Delete post</button>
                         </div>
                     </div>
                 </div>
