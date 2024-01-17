@@ -1,17 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Testimonials</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="assets/css/testimonial.css" />
-    <link rel="stylesheet" href="assets/css/index.css"/>
-    <link rel="icon" href="assets/icon/dumbways.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/testimonial.css" />
+    <link rel="stylesheet" href="/assets/css/index.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="assets/icon/dumbways.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -21,26 +20,26 @@
                 <li>
                     <img src="/assets/image/dumbways.png" style="height: 50px;" alt="Dumbways" />
                 </li>
-               <li class="nav-link nav-collapse">
+                <li class="nav-link nav-collapse">
                     <a href="/">
-                        Home
+                        <i class="fa fa-home"></i> Home
                     </a>
                 </li>
                 <li class="nav-link nav-collapse">
                     <a href="/My-Project">
-                        My Project
+                        <i class="fa fa-desktop"></i> My Project
                     </a>
                 </li>
                 <li class="nav-link nav-collapse">
-                    <a href="/testimonial">
-                        Testimonials
-                    </a>
+                    <a href="/testimonial" class="active">
+                        <i class="fa fa-star"></i> Testimonials
+                    </a> 
                 </li>
             </ul>
         </div>
 
         <div class="nav-right item-collapse">
-            <a href="/contact">Contact Me</a>
+            <a href="/contact"><i class="fa fa-phone"></i> Contact Me</a>
         </div>
         <div class="nav-right" id="barsmenu">
             <button style="background-color: transparent; border: none; cursor: pointer;" onclick="openHamburger();">
@@ -50,17 +49,17 @@
     </nav>
     
     <div class="hamburger-nav-container" id="hamburger-nav-container">
-        <a href="/">Home</a>
-        <a href="/My-Project">My Project</a>
-        <a href="/testimonial" class="hamburger-active">Testimonials</a>
-        <a href="/contact">Contact Me</a>
+        <a href="/"><i class="fa fa-home"></i> Home</a>
+        <a href="/My-Project"><i class="fa fa-desktop"></i> My Project</a>
+        <a href="/testimonial" class="active"><i class="fa fa-star"></i> Testimonials</a>
+        <a href="/contact"><i class="fa fa-phone"></i> Contact Me</a>
     </div>
 
     <div class="container">
-        <h1>My Testimonials</h1>
+        <h1><i class="fa fa-star"></i> My Testimonials</h1>
+        <br>
         <div class="container-rating">
-            <br>
-            <h2> Rating By Star</h2>
+            <h2>Rating By Star</h2>
             <div class="rating">
                 <button class="rating-btn" onclick="allTestimonials()">
                     All
@@ -84,18 +83,17 @@
         </div>
         <section class="testimonials" id="testimonials">
             <!-- <div class="testimonial">
-                <img src="/assets/profile/profile.png" class="profile-testimonial" />
+                <img src="assets/profile/profile.png" class="profile-testimonial" />
                 <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget lectus eu
                     libero venenatis gravida eget vel odio."</p>
                 <p class="author">- Ravano Akbar Widodo</p>
             </div> -->
         </section>
-       </div>
+    </div>
     </div>
     
     <script src="/assets/js/nav.js"></script>
-    <script src="/assets/js/index.js"></script>
-    <script src="/assets/js/ajax.js"></script>
+    <script src="/assets/js/testimonial.js"></script>
 </body>
 
 </html>
